@@ -1,16 +1,19 @@
+$navColor: #9EC3D8;
+$hoverColor: rgba(0, 0, 0, 0.1);
+$hauteurNav: 80px;
+$breakPoint1: 800px;
+$fontSize: 25px;
+$fontSizeHover: 30px;
+
 .contenu_page {
    text-align: center;
-}
-
-.affiche {
-   display: flex;
 }
 
 nav {
    position: relative;
    z-index: 1;
-   height: 101px;
-   background-color: #9EC3D8;
+   height: $hauteurNav;
+   background-color: $navColor;
 
    .div_burger {
       display: flex;
@@ -19,20 +22,24 @@ nav {
 
       div {
          width: 50px;
-         line-height: 100px;
+         line-height: $hauteurNav;
          margin-right: 30px;
       }
+   }
+
+   .affiche {
+      display: flex;
    }
 
    ul {
       display: none;
       flex-direction: column;
-      background-color: #9EC3D8;
+      background-color: $navColor;
       padding:0;
 
       li {
          list-style: none;
-         line-height: 100px;
+         line-height: $hauteurNav;
          width: 100%;
          text-align: center;
 
@@ -41,23 +48,25 @@ nav {
             color: black;
             width: 100%;
             text-align: center;
-            font-size: 25px;
+            font-size: $fontSize;
          }
 
          a:hover {
             text-decoration: none;
             color: black;
-            font-size: 35px;
+            font-size: $fontSizeHover;
          }
+      }
+
+      li:hover {
+         background-color: $hoverColor;
       }
    }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: $breakPoint1) {
 
    nav {
-      height: 100px;
-      background-color: #9EC3D8;
 
       .div_burger {
          display: none;
@@ -70,21 +79,6 @@ nav {
 
          li {
             display: inline-flex;
-            line-height: 100px;
-            width: 100px;
-            a {
-               text-decoration: none;
-               color: black;
-               width: 100px;
-               text-align: center;
-               font-size: 25px;
-            }
-
-            a:hover {
-               text-decoration: none;
-               color: black;
-               font-size: 35px;
-            }
          }
       }
    }
