@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/* line 1, ../César/Documents/MIW/Integration/github/2020_exo_menu/scss/style.scss */
+.contenu_page {
+  text-align: center;
+}
+
+/* line 5, ../César/Documents/MIW/Integration/github/2020_exo_menu/scss/style.scss */
+.affiche {
+  display: flex;
+}
+
+/* line 9, ../César/Documents/MIW/Integration/github/2020_exo_menu/scss/style.scss */
+nav {
+  position: relative;
+  z-index: 1;
+  height: 101px;
+  background-color: #9EC3D8;
+}
+
+/* line 15, ../César/Documents/MIW/Integration/github/2020_exo_menu/scss/style.scss */
+nav .div_burger {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+/* line 20, ../César/Documents/MIW/Integration/github/2020_exo_menu/scss/style.scss */
+nav .div_burger div {
+  width: 50px;
+  line-height: 100px;
+  margin-right: 30px;
+}
+
+/* line 27, ../César/Documents/MIW/Integration/github/2020_exo_menu/scss/style.scss */
+nav ul {
+  display: none;
+  flex-direction: column;
+  background-color: #9EC3D8;
+  padding: 0;
+}
+
+/* line 33, ../César/Documents/MIW/Integration/github/2020_exo_menu/scss/style.scss */
+nav ul li {
+  list-style: none;
+  line-height: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 39, ../César/Documents/MIW/Integration/github/2020_exo_menu/scss/style.scss */
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+}
+
+/* line 47, ../César/Documents/MIW/Integration/github/2020_exo_menu/scss/style.scss */
+nav ul li a:hover {
+  text-decoration: none;
+  color: black;
+  font-size: 35px;
+}
+
+@media screen and (min-width: 800px) {
+  /* line 58, ../César/Documents/MIW/Integration/github/2020_exo_menu/scss/style.scss */
+  nav {
+    height: 100px;
+    background-color: #9EC3D8;
+  }
+  /* line 62, ../César/Documents/MIW/Integration/github/2020_exo_menu/scss/style.scss */
+  nav .div_burger {
+    display: none;
+  }
+  /* line 66, ../César/Documents/MIW/Integration/github/2020_exo_menu/scss/style.scss */
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  /* line 71, ../César/Documents/MIW/Integration/github/2020_exo_menu/scss/style.scss */
+  nav ul li {
+    display: inline-flex;
+    line-height: 100px;
+    width: 100px;
+  }
+  /* line 75, ../César/Documents/MIW/Integration/github/2020_exo_menu/scss/style.scss */
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    text-align: center;
+    font-size: 25px;
+  }
+  /* line 83, ../César/Documents/MIW/Integration/github/2020_exo_menu/scss/style.scss */
+  nav ul li a:hover {
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
